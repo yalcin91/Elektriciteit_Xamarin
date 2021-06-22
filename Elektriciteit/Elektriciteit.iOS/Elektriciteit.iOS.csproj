@@ -223,4 +223,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\watt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon2.png" />
+  </ItemGroup>
 </Project>

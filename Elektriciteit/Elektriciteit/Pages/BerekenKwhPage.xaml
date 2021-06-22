@@ -4,43 +4,48 @@
              x:Class="Elektriciteit.Pages.BerekenKwhPage">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Margin="5">
+            <StackLayout Margin="5">
             <Frame BorderColor="#0679DE" 
                    Margin="7">
-                    <Label x:Name="LbEersteText"
-                   FontSize="Large" 
+                <Label x:Name="LbEersteText"
+                   FontSize="16" 
                    FontAttributes="Bold"
                    TextColor="Black"/>
-                </Frame>
-                <Entry Placeholder="aantal watt"
+            </Frame>
+            <Entry Placeholder="aantal watt"
                    x:Name="EnWatt"
                    Margin="5,5,5,5"
                    TextChanged="EnWatt_TextChanged"
                    Keyboard="Numeric"/>
-                <Entry Placeholder="aantal uur per dag"
+            <Entry Placeholder="aantal uur per dag"
                    x:Name="EnUur"
                    Margin="5,5,5,5"
                    TextChanged="EnUur_TextChanged"
                    Keyboard="Numeric"/>
-                <Entry Placeholder="aantal dagen"
+            <Entry Placeholder="aantal dagen"
                    x:Name="EnDagen"
                    Margin="5,5,5,5"
                    TextChanged="EnDagen_TextChanged"
                    Keyboard="Numeric"/>
-                <Entry Placeholder="prijs"
+            <Entry Placeholder="prijs"
                    x:Name="EnPrijs"
                    Margin="5,5,5,5"
                    TextChanged="EnPrijs_TextChanged"
                    Keyboard="Numeric"/>
-                <Button Text="Bereken"
+            <Button Text="Bereken"
                     x:Name="BtnBereken"
                     Clicked="BtnBereken_Clicked"
                     IsEnabled="False"/>
-                <Label x:Name="LbResultaat" MaxLines="50"
-                   FontSize="Large" 
-                   FontAttributes="Bold"
-                   TextColor="Red"/>
-            </StackLayout>
+                <Frame BorderColor="Red"
+                   Margin="7">
+                <Label x:Name="LbResultaat" 
+                       MinimumHeightRequest="400"
+                       FontSize="16" 
+                       FontAttributes="Bold"
+                       TextColor="Red"/>
+            </Frame>
+            <Label Text="                                         "/>
+        </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,7 @@
             <Frame BorderColor="#0679DE" 
                    Margin="7">
             <Label Text="Voor het berekenen van aantal weerstand ohm moet je de ampere en (watt of volt) weten"
-                   FontSize="Large" 
+                   FontSize="16" 
                    FontAttributes="Bold"
                    Padding="5"
                    TextColor="Black"/>
@@ -32,12 +32,17 @@
                     x:Name="BtnBereken"
                     Clicked="BtnBereken_Clicked"
                     IsEnabled="False"/>
-            <Label x:Name="LbResultaat"
-                   FontSize="Large" 
+                <Frame BorderColor="Red"
+                   Margin="7">
+                    <Label x:Name="LbResultaat"
+                   MinimumHeightRequest="400"
+                   FontSize="16" 
                    FontAttributes="Bold"
                    Padding="5"
                    TextColor="Red"/>
-        </StackLayout>
+                </Frame>
+                <Label Text="                                         "/>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

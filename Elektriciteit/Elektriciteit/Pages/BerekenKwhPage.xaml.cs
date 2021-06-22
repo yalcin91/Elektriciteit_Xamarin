@@ -14,12 +14,12 @@ namespace Elektriciteit.Pages
         public BerekenKwhPage()
         {
             InitializeComponent();
-            LbEersteText.Text = "Voor het berekenen van aantal \nkhw/€ moet je aantal gegevens weten." +
+            LbEersteText.Text = "Voor het berekenen van aantal \nkhw/€ moet je aantal gegevens weten.\n" +
                 "1) Aantal watt totaal.\n" +
                 "2) +-Aantalurenin gebruik per dag. \n" +
                 "3) aantal gewenste dagen. \n" +
                 "4) prijs per Khw(€0.18 - €0.25),\n" +
-                "is verschillend van leverancier";
+                "   is verschillend van leverancier";
         }
 
         private void Check()
