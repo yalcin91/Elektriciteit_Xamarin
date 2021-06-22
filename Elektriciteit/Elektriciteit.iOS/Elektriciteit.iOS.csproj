@@ -194,9 +194,6 @@
     <BundleResource Include="Resources\menu.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\tabelKabel.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Kruis.png" />
   </ItemGroup>
   <ItemGroup>
@@ -204,5 +201,26 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tabelWetVanOhm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tabelKabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kabelTabel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ampere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\euro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\weerstand1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\volt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\watt.png" />
   </ItemGroup>
 </Project>

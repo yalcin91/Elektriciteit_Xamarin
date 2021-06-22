@@ -15,7 +15,7 @@
 
         public ElekModel elekModel = new ElekModel();
 
-        public string Spanning()
+        public string Volt()
         {
             double result = 0;
             if (elekModel.Ohm == 0)

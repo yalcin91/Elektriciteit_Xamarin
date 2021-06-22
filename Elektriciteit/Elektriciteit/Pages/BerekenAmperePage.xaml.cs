@@ -68,13 +68,13 @@ namespace Elektriciteit.Pages
         {
             double watt = 0;
             double ohm = 0;
-            if (EnWatt.Text == "" || string.IsNullOrEmpty(EnVolt.Text)) { watt = 0; } else watt = double.Parse(EnWatt.Text);
+            if (EnWatt.Text == "" || string.IsNullOrEmpty(EnWatt.Text)) { watt = 0; } else watt = double.Parse(EnWatt.Text);
             if (EnOhm.Text == "" || string.IsNullOrEmpty(EnOhm.Text)) { ohm = 0; } else ohm = double.Parse(EnOhm.Text);
             var volt = double.Parse(EnVolt.Text);
             //var volt = double.Parse(EnVolt.Text);            
             //var ohm = double.Parse(EnOhm.Text);  
-            BerekenAmpere berekenWatt = new BerekenAmpere(volt, watt, ohm);
-            double resultaat = Math.Round(double.Parse(berekenWatt.Ampere()), 2);
+            BerekenAmpere berekenAmpere = new BerekenAmpere(volt, watt, ohm);
+            double resultaat = Math.Round(double.Parse(berekenAmpere.Ampere()), 2);
             LbResultaat.Text = $"Het aantal stroom is: {resultaat} ampere";
         }
     }

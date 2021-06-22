@@ -3,10 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Elektriciteit.Pages.BerekenVoltPage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame BorderColor="#0679DE" 
+                   Margin="7">
+                <Label Text="Voor het berekenen van aantal spanning volt moet je de ohm en (ampere of watt) weten"
+                   FontSize="Large" 
+                   FontAttributes="Bold"
+                   Padding="5"
+                   TextColor="Black"/>
+            </Frame>
+            <Entry Placeholder="ampere"
+                   x:Name="EnAmpere"
+                   Margin="5,5,5,5"
+                   TextChanged="EnAmpere_TextChanged"
+                   Keyboard="Numeric"/>
+            <Entry Placeholder="ohm"
+                   x:Name="EnOhm"
+                   Margin="5,5,5,5"
+                   TextChanged="EnOhm_TextChanged"
+                   Keyboard="Numeric"/>
+            <Entry Placeholder="watt"
+                   x:Name="EnWatt"
+                   Margin="5,5,5,5"
+                   TextChanged="EnWatt_TextChanged"
+                   Keyboard="Numeric"/>
+            <Button Text="Bereken"
+                    x:Name="BtnBereken"
+                    Clicked="BtnBereken_Clicked"
+                    IsEnabled="False"/>
+            <Label x:Name="LbResultaat"
+                   FontSize="Large" 
+                   FontAttributes="Bold"
+                   Padding="5"
+                   TextColor="Red"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

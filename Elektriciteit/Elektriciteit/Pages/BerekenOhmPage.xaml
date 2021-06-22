@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Elektriciteit.Pages.BerekenOhmPage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
+            <Frame BorderColor="#0679DE" 
+                   Margin="7">
             <Label Text="Voor het berekenen van aantal weerstand ohm moet je de ampere en (watt of volt) weten"
                    FontSize="Large" 
                    FontAttributes="Bold"
                    Padding="5"
                    TextColor="Black"/>
+            </Frame>
             <Entry Placeholder="ampere"
                    x:Name="EnAmpere"
                    Margin="5,5,5,5"
@@ -34,5 +38,6 @@
                    Padding="5"
                    TextColor="Red"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

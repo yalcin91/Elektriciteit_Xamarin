@@ -73,8 +73,8 @@ namespace Elektriciteit.Pages
             var ampere = double.Parse(EnAmpere.Text);
             //var volt = double.Parse(EnVolt.Text);            
             //var ohm = double.Parse(EnOhm.Text);  
-            BerekenOhm berekenWatt = new BerekenOhm(ampere, volt, watt);
-            var resultaat = Math.Round(double.Parse(berekenWatt.Ohm()), 2);
+            BerekenOhm berekenOhm = new BerekenOhm(volt, ampere, watt);
+            var resultaat = Math.Round(double.Parse(berekenOhm.Ohm()), 2);
             LbResultaat.Text = $"De aantal weerstand is: {resultaat} ohm";
         }
     }
