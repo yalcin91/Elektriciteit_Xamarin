@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Elektriciteit.Pages.BerekenWattPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Voor het berekenen van aantal vermogen watt moet je de ampere en (volt of ohm) weten"
+                   FontSize="Large" 
+                   FontAttributes="Bold"
+                   Padding="5"
+                   TextColor="Black"/>
+            <Entry Placeholder="ampere"
+                   x:Name="EnAmpere"
+                   Margin="5,5,5,5"
+                   TextChanged="EnAmpere_TextChanged"
+                   Keyboard="Numeric"/>
+            <Entry Placeholder="volt"
+                   x:Name="EnVolt"
+                   Margin="5,5,5,5"
+                   TextChanged="EnVolt_TextChanged"
+                   Keyboard="Numeric"/>
+            <Entry Placeholder="ohm"
+                   x:Name="EnOhm"
+                   Margin="5,5,5,5"
+                   TextChanged="EnOhm_TextChanged"
+                   Keyboard="Numeric"/>
+            <Button Text="Bereken"
+                    x:Name="BtnBereken"
+                    Clicked="BtnBereken_Clicked"
+                    IsEnabled="False"/>
+            <Label x:Name="LbResultaat"
+                   FontSize="Large" 
+                   FontAttributes="Bold"
+                   Padding="5"
+                   TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

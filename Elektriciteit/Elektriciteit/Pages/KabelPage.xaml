@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Elektriciteit.Pages.KabelPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0"
+                   Aspect="Fill"
+                   x:Name="imageNaam">
+            </Image>
+            <StackLayout Orientation="Vertical"
+                         Grid.Row="1">
+                <Label x:Name="LblDetail"
+                       FontSize="Medium"
+                       TextColor="Black" 
+                       FontAttributes="Bold"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
